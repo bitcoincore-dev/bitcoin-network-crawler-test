@@ -19,4 +19,4 @@ jobs:
     - name: Build
       run: cargo build --verbose
     - name: Run tests
-      run: cargo run testnet-seed.bitcoin.jonasschnelli.ch:18333 --network testnet3 & sleep 1000 && fuser -k 18333/tcp
+      run: cargo run testnet-seed.bitcoin.jonasschnelli.ch:18333 --network testnet3 & sleep 100 && fuser -k 18333/tcp
