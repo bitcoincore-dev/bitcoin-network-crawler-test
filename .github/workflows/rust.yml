@@ -19,4 +19,4 @@ jobs:
     - name: Build
       run: cargo build --verbose
     - name: Run tests
-      run: cargo test --verbose
+      run: cargo +beta run testnet-seed.bitcoin.jonasschnelli.ch:18333 --network testnet3
