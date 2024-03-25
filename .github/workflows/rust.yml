@@ -19,4 +19,4 @@ jobs:
     - name: Build
       run: cargo build --verbose
     - name: Run tests
-      run: cargo run testnet-seed.bitcoin.jonasschnelli.ch:18333 --network testnet3
+      run: cargo run testnet-seed.bitcoin.jonasschnelli.ch:18333 --network testnet3 & sudo lsof -t -i:18333 | xargs sudo kill -9
